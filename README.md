@@ -10,14 +10,20 @@ This Github Repository contains:
 4) weak form.pdf 
 
 1 - README.md 
-    This markdown file contains information regarding the other files located in this repository. 
+
+This markdown file contains information regarding the other files located in this repository. 
 
 2 - project_2_galerkin.m 
-    This Matlab file contains the code that computes the finite element method and applies it to the heat transfer problem. The backward and forward euler method code is also located in this file. 
+
+This Matlab file contains the code that computes the finite element method and applies it to the heat transfer problem. The backward and forward euler method code is also located in this file. 
+
 3 - FEM and BEM Plots. pdf
-    This pdf file contains the different graphs for the problem computed using both the Forward Euler Methods (FEM) and Backward Euler Method (BEM). 
+
+This pdf file contains the different graphs for the problem computed using both the Forward Euler Methods (FEM) and Backward Euler Method (BEM). 
+
 4 - weak form.pdf
-    This pdf file answers the first part of this project which would be deriving the weak form of the given equation. 
+
+This pdf file answers the first part of this project which would be deriving the weak form of the given equation. 
 
 ## Part A: Galerkin Weak Form 
 
