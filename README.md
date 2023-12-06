@@ -15,7 +15,7 @@ This markdown file contains information regarding the other files located in thi
 
 2 - **project_2_galerkin.m**
 
-This Matlab file contains the code that computes the finite element method and applies it to the heat transfer problem. The backward and forward euler method code is also located in this file. 
+This Matlab file uses the Finite Element Method to discretize the domain into elements, map it onto the parent function, and solve the heat transfer numerically. Using the provided Dirichlet Boundary conditions, the code also utilizes 2nd order Guassian quadrature to numerically integrate the f(x,t) function and assemble the mass and stiffness matrices. Using either FEM or BEM, this code takes into account time integration and finally plots the solution at the end, comparing the computed solution to the analytic solution. 
 
 3 - **FEM and BEM Plots. pdf**
 
