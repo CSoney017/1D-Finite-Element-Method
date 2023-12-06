@@ -108,7 +108,7 @@ dbc(N,N) = boundaries(2);
 
 %forward euler method is type = 1
 if method == 1
-for j = 1:551
+for j = 1:n
     u(:, j+1) = u(:, j) - dt.*inv_M.*K*u(:, j) + dt.*inv_M*f_global(:, j);  
     % 11 x 1 = (11x1) - (11x11)(11x1) + (11x11)(11x1)
     
@@ -117,11 +117,11 @@ for j = 1:551
 end
 
 else % backward euler method = 0
-for n = 1:551
-    u(:, n+1) = (1/dt).*inv_B*M*u(:, n) + inv_B*f_global(:, n+1); 
+for j = 1:n
+    u(:, j+1) = (1/dt).*inv_B*M*u(:, j) + inv_B*f_global(:, j+1); 
 
     % applying the boundary condition
-    u(:, n+1) = dbc*u(:, n+1);
+    u(:, j+1) = dbc*u(:, j+1);
 end
 end
 
